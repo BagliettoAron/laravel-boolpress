@@ -43,9 +43,19 @@ class PostController extends Controller
         $post->fill($data);
 
 
-        $post->slug=Str::slug($post->title, '-');
+        $base_slug=Str::slug($post->title, '-');
+        $slug = $base_slug;
+        $count = 1;
+        $post_found = Post::where('slug', '=', $slug)->first();
+        while($post_found) {
+            $slug = $base_slug . '-' . $count;
+            $post_found = Post::where('slug', '=', $slug)->first();
+            $count++;
 
-        
+        }
+
+        $post->slug = $slug;
+
         $post->save();
 
     }
