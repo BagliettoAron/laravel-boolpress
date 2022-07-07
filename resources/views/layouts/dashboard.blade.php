@@ -72,7 +72,7 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main role = "main" class="py-4">
             @yield('content')
         </main>
     </div>
