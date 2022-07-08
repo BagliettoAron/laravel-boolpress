@@ -15,3 +15,5 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css');
 
 mix.js('resources/js/FormDataEvent.js', 'public/js');
+
+mix.copy('node_modules/@fortawesome/fontawsome-free/webfonts', 'public/webfonts');
