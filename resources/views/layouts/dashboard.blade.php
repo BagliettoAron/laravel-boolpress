@@ -61,6 +61,13 @@
                             </a>
                         </li>
 
+                        <li class="nav-item">
+                            <a class="nav-link active" href="{{ route('admin.categories.index') }}">
+                                <i class="fa-solid fa-stags"></i>
+                                Categorie
+                            </a>
+                        </li>
+
                     </ul>
 
                 </div>
