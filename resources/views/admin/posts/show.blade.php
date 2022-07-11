@@ -18,6 +18,14 @@ empty
 @endforelse
 
 <p>{{ $post->content }}</p>
+<div class="d-flex">
+    <a class='btn btn-primary' href="{{ route ('admin', ['post'=> $post->id]) }}">modifica</a>
 
-<a class='btn btn-primary' href="{{ route ('admin', ['post'=> $post->id]) }}">modifica</a>
+    <form action="{{ route('admin.posts.destroy'), ['post'=>$post->id] }}" method="post">
+        @csrf
+        @method('DELETE')
+
+        <button class="btn btn-danger" type="submit" >Delete</button>
+    </form>
+</div>
 @endsection
