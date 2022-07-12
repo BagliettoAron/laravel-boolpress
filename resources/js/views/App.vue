@@ -1,13 +1,20 @@
 <template>
-<h2>app vue</h2>
+<div class="container">
+    <h2>guest page of boolpress</h2>
+    <Posts />
+</div>
   
 </template>
 
 <script>
-export default {
-    name:'App'
+import Posts from '../components/Posts.vue';
 
-}
+export default {
+    name: "App",
+    components: {
+         Posts, 
+         },
+};
 </script>
 
 <style>
