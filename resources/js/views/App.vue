@@ -1,19 +1,22 @@
 <template>
-<div class="container">
-    <h2>guest page of boolpress</h2>
-    <Posts />
+<div class="">
+    <Header />
+    <div class="container">
+        <router-view></router-view>
+    </div>
 </div>
   
 </template>
 
 <script>
-import Posts from '../components/Posts.vue';
+
+import Header from "../components/Header.vue"
 
 export default {
     name: "App",
     components: {
-         Posts, 
-         },
+        Header
+    }
 };
 </script>
 
