@@ -5,7 +5,7 @@ Vue.use(VueRouter)
 
 import Home from "./pages/Home.vue";
 import About from "./pages/About.vue";
-import Posts from "./pages/Posts.vue";
+import Posts from "./pages/Blog.vue";
 import NotFound from "./pages/NotFound.vue";
 
 
@@ -23,9 +23,9 @@ const router = new VueRouter({
             component: About
         },
         {
-            path: "/posts",
-            name: "posts",
-            component: Posts
+            path: "/blog",
+            name: "blog",
+            component: Blog
         },
         {
             path: "/*",

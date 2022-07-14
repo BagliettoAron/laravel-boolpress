@@ -13,6 +13,8 @@
 
         <router-link class="nav-item nav-link active" :to="{name:'posts'}">Posts </router-link>
 
+        <router-link class="nav-item nav-link active" :to="{name:'blog'}">Blog </router-link>
+
     </div>
   </div>
 </nav>
