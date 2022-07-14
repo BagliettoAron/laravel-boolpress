@@ -11,6 +11,8 @@
 
        <router-link class="nav-item nav-link active" :to="{name:'about'}">About </router-link>
 
+        <router-link class="nav-item nav-link active" :to="{name:'posts'}">Posts </router-link>
+
     </div>
   </div>
 </nav>
